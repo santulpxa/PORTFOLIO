@@ -390,13 +390,13 @@ h3.my-profession {
 }
 
 .html {
-    width: 90%;
+    width: 95%;
     background-color: var(--font-color-orange);
     border-radius: 1rem;
     animation: animate 1.2s linear forwards;
 }
 
-.css {
+.c {
     width: 85%;
     background-color: var(--font-color-orange);
     border-radius: 1rem;
@@ -404,7 +404,7 @@ h3.my-profession {
 }
 
 .js {
-    width: 75%;
+    width: 80%;
     background-color: var(--font-color-orange);
     border-radius: 1rem;
     animation: animate 1.2s linear forwards;
@@ -412,6 +412,12 @@ h3.my-profession {
 
 .php {
     width: 50%;
+    background-color: var(--font-color-orange);
+    border-radius: 1rem;
+    animation: animate 1.2s linear forwards;
+}
+.back-end{
+    width: 75%;
     background-color: var(--font-color-orange);
     border-radius: 1rem;
     animation: animate 1.2s linear forwards;
