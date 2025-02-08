@@ -1,0 +1,1050 @@
+/* Googole fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* **********Variables************* */
+
+:root {
+    --bg-color: #FFFAFA;
+    --font-color-orange: #FFA500;
+    --font-color-orange-hover: #f76504;
+}
+
+/* *****************************HOME PAGE(Starting)*********************************************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    line-height: 1.6;
+    font-family: "Mukta", sans-serif;
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.side-bar {
+    box-shadow: 0 0 12px rgba(70, 69, 69, 0.3);
+    border-right: 2px solid rgb(99, 99, 99);
+    height: 100vh;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    position: relative;
+    transition: 0.5s linear;
+    margin-right: 10px;
+}
+
+/* ****Styling for the menu botton(start)***** */
+
+.menu1 {
+    background-color: rgb(83, 83, 83);
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.active {
+    transform: translateX(-250px);
+}
+
+.notactive {
+    transform: translateX(0);
+}
+
+/* ****Styling for the menu botton(end)***** */
+i {
+    color: var(--font-color-orange);
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.side-bar-profile {
+    text-align: center;
+    position: absolute;
+    top: 4.5rem;
+}
+
+.side-bar-profile h3 {
+    font-weight: 800;
+}
+
+.side-bar-profile img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 2.5px solid rgb(0, 0, 0);
+}
+
+.hero {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.cross {
+    background-color: rgb(83, 83, 83);
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* *******Styling for color panels (start)********** */
+.colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(83, 83, 83);
+    height: 2rem;
+    width: 8rem;
+    position: absolute;
+    top: 1rem;
+    right: 3.5rem;
+    text-align: center;
+    border-radius: 1.8rem
+}
+
+.color1 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #38f5f2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color2 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #f213a4c0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color3 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(241, 123, 44);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* *******Styling for color panels (end)********** */
+
+
+.side-bar-list {
+    margin-top: 50px;
+}
+
+.side-bar-list li {
+    border-bottom: 1px solid #d1d4d4;
+}
+
+.side-bar-list li a {
+    letter-spacing: 1px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: large;
+    line-height: 2.5;
+    color: var(--font-color-orange);
+}
+
+.side-bar-list li a:hover {
+    color: var(--font-color-orange-hover);
+}
+
+
+/* *******Styling for the hero section(starting)********* */
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2em;
+}
+
+.profile-wrapper {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture img {
+    /* border: 2px solid red; */
+    padding: 5px;
+    height: 300px;
+    width: 300px;
+    /* position: relative; */
+}
+
+.profile-picture {
+    position: relative;
+    margin-right: 7em;
+}
+
+
+/* ******Adding stylish border(starting)******* */
+
+
+.profile-picture .profile-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    border-left: 8px solid var(--font-color-orange);
+    border-top: 8px solid var(--font-color-orange);
+}
+
+.profile-picture .profile-wrapper::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: 0;
+    right: 0;
+    border-right: 8px solid var(--font-color-orange);
+    border-bottom: 8px solid var(--font-color-orange);
+}
+
+
+/* ******Adding stylish border(ending)******* */
+
+.personal-info {
+    max-width: 80%;
+    margin-left: 3.5rem;
+}
+
+h3.hello {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: "Clicker Script", cursive;
+    /* font-size:40px; */
+    font-weight: 700;
+    font-style: normal;
+    color: var(--font-color-orange);
+    letter-spacing: 2px;
+}
+
+h3.my-profession {
+    margin: 15px 0;
+    font-size: 30px;
+}
+
+.typing {
+    color: var(--font-color-orange);
+}
+
+.personal-info p {
+    font-size: 20px;
+    margin-bottom: 70px;
+    margin-bottom: 2rem;
+}
+
+/* ****styling for button(beginning)***** */
+.personal-info a {
+    text-decoration: none;
+}
+
+.personal-info p {
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+
+.download {
+    background-color: var(--font-color-orange);
+    padding: 12px 30px;
+    border-radius: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.download:hover {
+    transform: scale(1.05);
+}
+
+/* ****styling for button(ending)***** */
+
+
+
+/* *********************HOME PAGE(ending)*********************************************** */
+/* *****About Section(start)******** */
+.about {
+    margin-bottom: 3em;
+}
+
+.about h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+}
+
+.skills {
+    margin-bottom: 2rem;
+}
+
+.about h2::before {
+    content: '';
+    position: absolute;
+    height: 0.3rem;
+    width: 3.5rem;
+    top: 100%;
+    left: 0;
+    background-color: var(--font-color-orange);
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    height: 0.3rem;
+    width: 2rem;
+    top: 100%;
+    left: 0;
+    background-color: var(--font-color-orange);
+    margin-top: 0.5rem;
+}
+
+.typing1 {
+    color: var(--font-color-orange);
+}
+
+.skill-border {
+    margin-bottom: 1.5rem;
+}
+
+.skill-border h3 {
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+}
+
+.skill-border h3::before {
+    content: '';
+    height: 0.3rem;
+    width: 2.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--font-color-orange);
+}
+
+.skill-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 1rem;
+    width: 100%;
+    background-color: rgb(241, 211, 174);
+    position: relative;
+    border-radius: 1rem;
+}
+
+.skill-progress {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.html {
+    width: 90%;
+    background-color: var(--font-color-orange);
+    border-radius: 1rem;
+    animation: animate 1.2s linear forwards;
+}
+
+.css {
+    width: 85%;
+    background-color: var(--font-color-orange);
+    border-radius: 1rem;
+    animation: animate 1.2s linear forwards;
+}
+
+.js {
+    width: 75%;
+    background-color: var(--font-color-orange);
+    border-radius: 1rem;
+    animation: animate 1.2s linear forwards;
+}
+
+.php {
+    width: 50%;
+    background-color: var(--font-color-orange);
+    border-radius: 1rem;
+    animation: animate 1.2s linear forwards;
+}
+
+@keyframes animate {
+    from {
+        width: 0%;
+    }
+}
+
+/* *****About Section(end)******** */
+
+/* **************Projects Section (start)********************** */
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5em;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0e6e6;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 220px;
+    height: 180px;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+
+.project-card:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.personal-info-1 {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* **************Projects Section (End)*********************** */
+
+/* ****************Contact Me (starting)********************** */
+.form-container {
+    margin: 40px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 25rem;
+    height: 31em;
+}
+
+/* Form Header */
+h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button */
+.submit-btn {
+    width: 100%;
+    height: 2.5em;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--font-color-orange);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--font-color-orange-hover);
+}
+
+.social-media {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.love {
+    position: absolute;
+    top: 90%;
+    left: 1.8rem;
+}
+
+/* ****************Contact Me (ending)********************** */
+
+
+
+/* ******************Responsive******************** */
+
+
+/* #############################{Responsive for small devices}######################################## */
+
+@media screen and (max-width: 400px) {
+
+    /* for home page */
+
+    /* main wrapper page */
+    .main-wrapper {
+        height: 100 vh;
+        width: 100vw;
+    }
+
+    /* Sidebar */
+    .side-bar {
+        position: fixed;
+        margin-right: 10px;
+        z-index: 20;
+    }
+
+    .active {
+        transform: translateX(-270px);
+    }
+
+    .love {
+        width: 200px;
+        margin: 0 auto;
+        font-size: smaller;
+        left: 4.6rem;
+    }
+
+    .side-bar-list {
+        margin-top: 5em;
+    }
+
+    /* Hero section */
+    h3.hello {
+        font-size: 1rem;
+    }
+
+    h3.my-profession {
+        font-size: 15px;
+    }
+
+    .personal-info p {
+        font-size: 10px;
+    }
+    #need-ht{
+        height: 50px;
+    }
+
+    .profile-wrapper{
+        height: 100%;
+        width: auto;
+    }
+
+    .profile-wrapper img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .profile-picture .profile-wrapper::before {
+        display: none;
+    }
+
+    .profile-picture .profile-wrapper::after {
+        display: none;
+    }
+    .hero{
+        display: inline-block;
+        margin-right: 0;
+    }
+    .profile-picture{
+        position: relative;
+        margin-right: 0;
+        top: -30rem;
+    }
+    .description{
+        margin-top: 23rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+    }
+    .personal-info a{
+        margin-left: 20px;
+    }
+    .download {
+        background-color: var(--font-color-orange);
+        padding: 5px 20px;
+        border-radius: 2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: white;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+  
+
+    /* For about page */
+    .hide-in-about{
+        display: none;
+    }
+    .info-for-index{
+        margin-left: 60px;
+    }
+    .description-in-about{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+    }
+    .about h2{
+        font-weight: bold;
+        font-size: 2.5rem;
+        position: relative;
+    }
+    .skill-border h3{
+        font-size: 25px;
+    }
+
+    /* For Projects page */
+    .description-in-projects{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+    }
+    .project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+    }
+    .project-card{
+        width: 150px;
+        height: 130px;
+    }
+    .project-description{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /* For Contacts */
+    .description-in-contacts{
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1.5re
+    }
+    .img img{
+        display: none;
+    }
+    .form-container{
+        margin: 0 auto;
+        height: 25rem;
+        width: 20rem;
+    }
+    .form-group input{
+        font-size: 5px;
+    }
+    #message{
+        height: 50px;
+    }
+    .social-media{
+        margin-left: -90px;
+    }
+
+}
+
+
+
+
+
+/* Responsive for medium devices */
+
+@media (min-width: 400px) and (max-width: 520px) {
+
+    /* for home page */
+
+    /* main wrapper page */
+    .main-wrapper {
+        height: 100 vh;
+        width: 100vw;
+    }
+
+    /* Sidebar */
+
+    .description{
+        margin-top: 20rem;
+        margin-bottom: 2rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .side-bar {
+        position: fixed;
+        margin-right: 10px;
+        z-index: 20;
+    }
+
+    .active {
+        transform: translateX(-270px);
+    }
+
+    .love {
+        width: 200px;
+        margin: 0 auto;
+        font-size: smaller;
+        left: 4rem;
+    }
+
+    .side-bar-list {
+        margin-top: 5em;
+    }
+
+    /* Hero section */
+    h3.hello {
+        font-size: 1.5rem;
+    }
+
+    h3.my-profession {
+        font-size: 15px;
+    }
+
+    .personal-info p {
+        font-size: 10px;
+    }
+
+    .profile-wrapper{
+        height: 100%;
+        width: auto;
+    }
+
+    .profile-wrapper img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .profile-picture .profile-wrapper::before {
+        display: none;
+    }
+
+    .profile-picture .profile-wrapper::after {
+        display: none;
+    }
+    .hero{
+        display: inline-block;
+        margin-right: 0;
+    }
+    .profile-picture{
+        position: relative;
+        margin-right: 0;
+        top: -28rem;
+    }
+    .personal-info a{
+        margin-left: 82px;
+    }
+    .download {
+        background-color: var(--font-color-orange);
+        padding: 5px 20px;
+        border-radius: 2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: white;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+  
+
+    /* For about page */
+    .hide-in-about{
+        display: none;
+    }
+    .info-for-index{
+        margin-left: 60px;
+    }
+    .description-in-about{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+    }
+    .about h2{
+        font-weight: bold;
+        font-size: 2.5rem;
+        position: relative;
+    }
+    .skill-border h3{
+        font-size: 25px;
+    }
+
+    /* For Projects page */
+    .description-in-projects{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+    }
+    .project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+    }
+    .project-card{
+        width: 130px;
+        height: 120px;
+    }
+    .project-description{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /* For Contacts */
+    .description-in-contacts{
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1.5re
+    }
+    .img img{
+        display: none;
+    }
+    .form-container{
+        margin: 0 auto;
+        height: 25rem;
+        width: 20rem;
+    }
+    .form-group input{
+        font-size: 5px;
+    }
+    #message{
+        height: 50px;
+    }
+    .social-media{
+        margin-left: -70px;
+    }
+
+}
+
+
+
+/* Responsive for medium devices */
+
+@media (min-width: 520px) and (max-width: 1024px) {
+
+    /* for home page */
+
+    /* main wrapper page */
+    .main-wrapper {
+        height: 100 vh;
+        width: 100vw;
+    }
+
+    /* Sidebar */
+
+    .description{
+        margin-top: 15rem;
+        margin-bottom: 2rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .side-bar {
+        position: fixed;
+        margin-right: 10px;
+        z-index: 20;
+    }
+
+    .active {
+        transform: translateX(-270px);
+    }
+
+    .love {
+        width: 200px;
+        margin: 0 auto;
+        font-size: smaller;
+        left: 4.5rem;
+    }
+
+    .side-bar-list {
+        margin-top: 5em;
+    }
+
+    /* Hero section */
+    h3.hello {
+        font-size: 2rem;
+    }
+
+    h3.my-profession {
+        font-size: 1.5rem;
+    }
+
+    .personal-info p {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .profile-wrapper{
+        height: 100%;
+        width: auto;
+    }
+    .profile-picture{
+        margin-top: 12rem;
+    }
+
+    .profile-wrapper img{
+        height: 250px;
+        width: 200px;
+        padding: 10px;
+    }
+  
+
+    /* For about page */
+    .hide-in-about{
+        display: none;
+    }
+    .info-for-index{
+        margin-left: 60px;
+    }
+    .description-in-about{
+        width: 100vw;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+    }
+    .about h2{
+        font-weight: bold;
+        font-size: 2.5rem;
+        position: relative;
+    }
+    #need-ht{
+        height: 50px;
+    }
+    .skill-border h3{
+        font-size: 25px;
+    }
+
+    /* For Projects page */
+    .description-in-projects{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+    }
+    
+    .project {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+    }
+    .project-card{
+        width: 200px;
+        height: 180px;
+    }
+    .project-description{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /* For Contacts */
+    .description-in-contacts{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1.5re
+    }
+    .social-media{
+        margin-left: -30px;
+        margin-top: 5rem;
+    }
+    .img img{
+        display: none;
+    }
+    .form-container{
+        margin: 0 auto;
+        height: 25rem;
+        width: 20rem;
+    }
+    .form-group input{
+        font-size: 5px;
+    }
+    #message{
+        height: 50px;
+    }
+    
+
+}
